@@ -3,7 +3,7 @@
 ## 开启局域网访问
 
 ```json
-<!-- vite.config -->
+# vite.config
 server: {
     host: '0.0.0.0'
 },
@@ -12,14 +12,14 @@ server: {
 ## 配置别名
 
 ```json
-<!-- vite.config -->
+# vite.config
 resolve: {
     alias: {
         '@': path.resolve(__dirname, "src")
     }
 }
 
-<!-- tsconfig.json -->
+# tsconfig.json
 "paths":{
     "@/*": ["src/*"],
 },
@@ -28,7 +28,7 @@ resolve: {
 ## 未设置 "baseUrl" 时，不允许使用非相对路径。是否忘记了前导 "./"
 
 ```json
-<!-- tsconfig.json -->
+# tsconfig.json
 "baseUrl": ".",
 ```
 
